@@ -15,7 +15,7 @@ class _MyWidgetState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blueAccent,
-        title: const Text('CAR 360'),
+        title: const Text('CAR 360 by Shiv Shakti'),
         centerTitle: true,
         //elevation: sqrt1_2,
         leading: IconButton(
@@ -24,6 +24,20 @@ class _MyWidgetState extends State<HomeScreen> {
             Navigator.pop(context);
           },
         ),
+      ),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Search',
+                prefixIcon: Icon(Icons.search),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
