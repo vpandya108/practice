@@ -18,7 +18,12 @@ class _MyWidgetState extends State<HomeScreen> {
         title: const Text('CAR 360'),
         centerTitle: true,
         //elevation: sqrt1_2,
-        leading: Icon(Icons.arrow_back),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
       ),
     );
   }
