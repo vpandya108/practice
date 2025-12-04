@@ -1,20 +1,27 @@
 import 'package:flutter/material.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
   @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  
   Widget build(BuildContext context) {
     return  Scaffold(
       body:Container(
-        color: Colors.white,
+        color: Colors.blueAccent,
         child: Center(
-          child: Text(
-            'Welcome to CAR 360',
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-          ),
+          child: Text('welcome to car 360',
+          style: TextStyle(
+            fontSize: 30,
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),),
         ),
-
       )
     );
   }
